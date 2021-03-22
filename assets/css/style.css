@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: black; }
+
+.no-gutters {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
+/*NAVBAR*/
+.nav-link {
+  font-family: 'Marck Script', cursive;
+  font-size: 2em;
+  padding-right: 2rem !important;
+  padding-left: 2rem !important;
+  border-radius: 2rem;
+  font-weight: 600; }
+
+.nav-item :hover {
+  box-shadow: inset 0 0 20px rgba(150, 229, 235, 0.5), 0 0 20px rgba(126, 200, 223, 0.4);
+  outline-offset: 80px;
+  text-shadow: 1px 1px 6px #e8f3f5; }
+
+.logo {
+  width: 10em;
+  padding-left: 1em; }
+
+.LinkContact, .LinkQuien, .LinkGal, .LinkProduc, .LinkIndex {
+  color: #e91f11 !important;
+  font-weight: 600; }
+
+.top {
+  margin-top: 8em; }
+
+.foto1 {
+  background: url(../css/img/amantesandwich.jpg);
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.foto2 {
+  background: url(../css/img/107566148_47862ada8c_o.jpg);
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; }
