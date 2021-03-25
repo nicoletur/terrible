@@ -31,18 +31,58 @@ body {
   font-weight: 600; }
 
 .top {
-  margin-top: 8em; }
+  margin-top: 3em; }
 
-.foto1 {
-  background: url(../css/img/amantesandwich.jpg);
+/*CAROUSEL*/
+.carousel-item {
+  height: 30em; }
+
+@media (min-width: 800px) {
+  .carousel-item {
+    height: 40em; } }
+
+/* imagenes del carousel */
+.slide1 {
+  background-image: url(../css/img/amante1.jpg);
   width: 100%;
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat; }
 
-.foto2 {
-  background: url(../css/img/107566148_47862ada8c_o.jpg);
+@media (min-width: 800px) {
+  .slide1 {
+    background-image: url(../css/img/amante2.jpg);
+    width: 100%;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat; } }
+
+.slide2 {
+  background-image: url(../css/img/Delicioso1.jpg);
   width: 100%;
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat; }
+
+@media (min-width: 800px) {
+  .slide2 {
+    background-image: url(../css/img/Delicioso2.jpg);
+    width: 100%;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat; } }
+
+.slide3 {
+  background-image: url(../css/img/VENCON1.jpg);
+  width: 100%;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+@media (min-width: 800px) {
+  .slide3 {
+    background-image: url(../css/img/VENCON2.jpg);
+    width: 100%;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat; } }

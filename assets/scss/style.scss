@@ -2,6 +2,7 @@
 
 * {box-sizing:border-box;
 }
+
 body {
 background-color: black;
 }
@@ -37,13 +38,62 @@ background-color: black;
     .top{
         margin-top: $Top;
     }
-    .foto1{
-        background: url(../css/img/amantesandwich.jpg);
-        @include bg-images;
-    }
-    .foto2{
-        background: url(../css/img/107566148_47862ada8c_o.jpg);
-        @include bg-images;
-    }
+/*CAROUSEL*/
 
+.carousel-item {
+	height: 30em;
+}
+
+
+@media (min-width: 800px) {
+    .carousel-item {
+		height:40em;
+		}
+        // .slide1{
+        //     background-image: url(../css/img/amante2.jpg);
+        //     @include bg-images
+        // }
+        // .slide2{
+        //     background-image: url(../css/img/Delicioso2.jpg);
+        //     @include bg-images
+        // }
+        // .slide3{
+        //     background-image: url(../css/img/VENCON2.jpg);
+        //     @include bg-images
+        // }
+}
+
+/* imagenes del carousel */
+.slide1 {
+	background-image: url(../css/img/amante1.jpg) ;
+	@include bg-images
+}
+    @media (min-width: 800px){
+        .slide1{
+        background-image: url(../css/img/amante2.jpg);
+        @include bg-images
+    }
+}
+
+.slide2 {
+    background-image: url(../css/img/Delicioso1.jpg);
+    @include bg-images
+}
+@media (min-width: 800px){
+    .slide2{
+    background-image: url(../css/img/Delicioso2.jpg);
+    @include bg-images
+}
+}
+
+.slide3 {
+    background-image: url(../css/img/VENCON1.jpg);
+	@include bg-images
+}
+@media (min-width: 800px){
+    .slide3{
+    background-image: url(../css/img/VENCON2.jpg);
+    @include bg-images
+}
+}
 
