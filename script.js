@@ -2,7 +2,7 @@
 
 // let IngresoBebida = prompt("¿Que bebida deseas? (Pespi, Orange, Bilz, Pap)");
 // while(IngresoBebida != "ESC" ){
-    
+
 //     switch (IngresoBebida) {
 //         case "Pepsi":
 //             alert("Has elegido Pepsi");
@@ -87,7 +87,7 @@ let HolaRepeticion = parseInt (prompt("Ingrese Numero de veces que quiere que lo
 for (let i = 0; i < HolaRepeticion; i++){
     let result = HolaRepeticion + i;
     let  RepeticionDeHola = Hola + result ;
-    console.log (HolaRepeticion);
+    console.log (RepeticionDeHola);
 }
 
 
