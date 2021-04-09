@@ -1,4 +1,5 @@
 @import "variables";
+@import "online";
 
 * {box-sizing:border-box;
 }
@@ -49,19 +50,8 @@ background-color: black;
     .carousel-item {
 		height:40em;
 		}
-        // .slide1{
-        //     background-image: url(../css/img/amante2.jpg);
-        //     @include bg-images
-        // }
-        // .slide2{
-        //     background-image: url(../css/img/Delicioso2.jpg);
-        //     @include bg-images
-        // }
-        // .slide3{
-        //     background-image: url(../css/img/VENCON2.jpg);
-        //     @include bg-images
-        // }
-}
+    }
+
 
 /* imagenes del carousel */
 .slide1 {

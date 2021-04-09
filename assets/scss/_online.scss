@@ -1,0 +1,26 @@
+
+.fondoContainer{
+font-family: $fontText ;
+top:$Top;
+text-align: center;
+background-color: transparentize($color: #f7fb05, $amount:0.2);
+}
+
+.casilla{
+    margin-top: 4em;
+    font-family: $fontText;
+    text-align: center;
+    margin-left: 2em;
+    color: blanchedalmond;
+
+    h3{
+        font-size: 30pt;
+    }
+}
+
+.btn-group, .btn,  .btn-default, .button, .dropdowm-toggle, .dropdowm, .dropdown-menu {
+    color: blanchedalmond;
+    text-align: center;
+
+}
+

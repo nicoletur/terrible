@@ -1,3 +1,22 @@
+.fondoContainer {
+  font-family: "Marck Script", cursive;
+  top: 3em;
+  text-align: center;
+  background-color: rgba(247, 251, 5, 0.8); }
+
+.casilla {
+  margin-top: 4em;
+  font-family: "Marck Script", cursive;
+  text-align: center;
+  margin-left: 2em;
+  color: blanchedalmond; }
+  .casilla h3 {
+    font-size: 30pt; }
+
+.btn-group, .btn, .btn-default, .button, .dropdowm-toggle, .dropdowm, .dropdown-menu {
+  color: blanchedalmond;
+  text-align: center; }
+
 * {
   box-sizing: border-box; }
 
