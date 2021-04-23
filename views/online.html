@@ -112,10 +112,22 @@
             </div>
           </div>  
       </div>
-  
+    </div>
 
-
+    <div class="row no-gutters">
+      <div class="col-12 casilla">
+        <h4>Coloca algun otro ingrediente de tu gusto</h4>
+        <input type="text" id="nuevoIngrdiente" onkeypress="validar(event)" />
       </div>
+    </div>
+
+    <div class="row no-gutters">
+       <div class="col-12 text-center casilla">
+        <h4>Eligue la bebida que mas te guste</h4>
+        <div class="listaBebidas"></div>
+        
+        </div>
+    </div>
 
 
    <div class="row no-gutters casilla">
@@ -132,6 +144,20 @@
       <div class="col">
         <h4>$1500</h4> 
       </div>
+
+
+      <div class="col">
+
+        <a style='cursor: pointer;' onClick="imagenOculta('contenido')" title="" class="boton_mostrar">Mostrar / Ocultar</a>
+
+        <div id="contenido">  <img id="imagencargando" src="../img/completo.jpg" width="200" height="200" alt="completo" >
+        </div>
+      
+      </div>
+
+
+
+
       <div class="col btn-group">
           <button type="button" class="btn btn-default dropdown-toggle"
                   data-toggle="dropdown">
@@ -154,6 +180,7 @@
           </ul>
         </div>
       </div>
+
     <div class="row col-12 p-2 no-gutters ">
           <div class="col no-gutters ">
             <h4>Dinamico</h4>
@@ -186,6 +213,7 @@
               </ul>
             </div>
       </div>
+
     <div class="row col-12 p-2 no-gutters ">
             <div class="col no-gutters ">
               <h4>Sureño</h4>
@@ -218,7 +246,9 @@
                 </ul>
               </div>
             </div>
+
       </div>
+    
 
       <div class="row no-gutters casilla">
         <div class="col-12 no-gutters p-3">
@@ -394,7 +424,38 @@
           </div>
 
 
+          
+<div id="contenedor ">
+  <div class="text-center" id="cabeza ">
+    <h3 class="fondoContainer">Ingrese sus datos y presione el validador para confirmar</h3>
+    <h6 class="casilla m-1">Luego baja mas para ver la informacion</h6>
 
+    <form action="" id="formulario">
+
+      <input type="text" id="nombre" placeholder="Nombre" >
+
+      <input type="text" id="telefono" placeholder="telefono">
+
+      <input type="date" name="fecha" class="sendit" onchange="edad(event);">
+
+      <input type="email" id="email" placeholder="Example@mailserv.com">
+
+      <!-- <input type="button" value="enviar" name="boton" id="disparador" onclick="sub() "> -->
+      <button type="button" class="btn btn-info" id='disparador' value="enviar" onclick="sub()" ></button>       
+    </form>
+  </div>
+
+  <div class="text-center " id="cuerpo">
+      <h1 id="nom"></h1>
+      <h1 id="ape"></h1>
+      <h1 id="eda"></h1>
+      <h1 id="mai"></h1>
+  </div>
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="../script.js"></script>
 <script src="https://cdn.boomcdn.com/libs/wow-js/1.3.0/wow.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
