@@ -1,11 +1,11 @@
 
 //captura nombre del usuario y muestra su nombre
-window.onload = function(){
-  var nombreUsuario = prompt("Bienvenido al Terrible, me dices tu nombre?");
+
+  let nombreUsuario = prompt("Bienvenido al Terrible, me dices tu nombre?");
+  let usu = localStorage.getItem(' nombreUsuario ')
   document.querySelector (".saludoInicial").innerHTML = nombreUsuario;
-}
-
-
+    
+   
 //array con diferentes saludos aleatoreos cuando se carga la pagina
 var Frases = new Array()
 Frases[0] = "Gracias por visitarnos";
@@ -53,6 +53,14 @@ for (const ingrediente of Ingredientes) {
     document.querySelector ('.ingredientes').appendChild(contenedor);
 }
 
+const guardaLocal = (clave, valor) => { localStorage.setItem(clave, valor)};
+
+for (const guardaIngrediente of Ingredientes){
+ guardaLocal(guardaIngrediente.producto, JSON.stringify(guardaIngrediente));
+}
+
+
+
 
 //array con los tipos de hamburguesas
 const tipoHamburguesa = [ "Hamburguesa Basica", "Hamburguesa Glotona", "Hamburguesa  campestre", "Hamburguesa Royal", "Chacarera", 
@@ -73,6 +81,8 @@ function agregarBebidas() {
   }
 }
 agregarBebidas();
+
+
 
 
 //uso de Join e IndexOf
@@ -112,13 +122,11 @@ for (let Ingrediente of Ingredientes) {
 
           var nombreCliente, direccionCliente, telefonoCliente, emailCliente; 
           
-
           function sub() {
             var nombre = null;
             var telefono = null;
             var correo = null;
-            
-          
+                  
           
             nombre = document.getElementById("nombre").value;
             telefono = document.getElementById("telefono").value;
@@ -143,6 +151,8 @@ for (let Ingrediente of Ingredientes) {
             document.getElementById('eda').innerHTML = res;
           }
           
+
+
           
           // boton que oculta o muestra  la informacion del usuario
           window.addEventListener('load', init, false);
@@ -184,3 +194,19 @@ for (let Ingrediente of Ingredientes) {
              
               if (tecla==13) alert ( "ingrediente agregado");
             }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
